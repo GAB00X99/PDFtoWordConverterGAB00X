@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertidor PDF a Word</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+            background-image: url(https://i0.wp.com/thetechhacker.com/wp-content/uploads/2016/10/Convert-PDF-to-Word.jpg?fit=1000%2C640&ssl=1);
+            background-size: cover;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #343a40;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+        }
+     
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+        
+        .footer a {
+            margin: 0 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Convertidor PDF a Word</h1>
+        <form action="/convert" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="pdf_file">Selecciona un archivo PDF:</label>
+                <input type="file" name="pdf_file" accept=".pdf" class="form-control-file">
+            </div>
+            <input type="submit" value="Convertir" class="btn btn-primary btn-block">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <a href="https://github.com/GAB00X99" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/gabriel-ferreyra-0636b321a/" target="_blank">Linkedin</a>
+        <a href="https://www.instagram.com/gabo_ferre/" target="_blank">Instagram</a>
+        <div class="footer">
+            GAB00X2023
+        </div>
+    </footer>
+  
+</body>
+</html>
+
