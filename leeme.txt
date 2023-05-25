@@ -1,0 +1,40 @@
+# Conversor de PDF a DOCX utilizando Flask
+
+Esta es una aplicación web que permite convertir archivos PDF a archivos DOCX utilizando Flask, una biblioteca de Python para construir aplicaciones web.
+
+## Funcionamiento
+
+1. El usuario accede a la página principal donde puede seleccionar un archivo PDF para convertir.
+2. Una vez seleccionado el archivo PDF, se realiza una solicitud POST a la ruta `/convert`.
+3. El servidor guarda temporalmente el archivo PDF en un directorio temporal.
+4. Se genera un archivo DOCX utilizando la biblioteca pdf2docx para realizar la conversión.
+5. El archivo DOCX resultante se guarda en el directorio `static` de la aplicación.
+6. El servidor envía el archivo DOCX al cliente para descargarlo.
+7. Si no se proporcionó un archivo PDF, el servidor redirecciona a la página principal.
+
+## Requisitos
+
+- Python 3.x
+- Flask
+- pdf2docx
+
+## Uso
+
+1. Clona este repositorio en tu máquina local.
+2. Instala las dependencias utilizando el siguiente comando:
+3. Ejecuta la aplicación utilizando el siguiente comando:
+4. Abre tu navegador web y accede a `http://localhost:5000`.
+5. Selecciona un archivo PDF y haz clic en el botón "Convertir".
+6. Se descargará un archivo DOCX con la conversión del PDF.
+
+## Créditos
+
+- Este código utiliza Flask, una biblioteca de Python para construir aplicaciones web: [Flask](https://flask.palletsprojects.com/)
+- La conversión de PDF a DOCX se realiza utilizando la biblioteca pdf2docx: [pdf2docx](https://github.com/ashish1294/pdf2docx)
+
+## Notas
+
+- Esta aplicación se proporciona solo con fines educativos y no debe utilizarse para infringir derechos de autor o violar los términos de uso de ningún servicio.
+- El código puede requerir modificaciones adicionales para su implementación en producción y garantizar la seguridad adecuada.
+- No nos hacemos responsables por el uso indebido de este código.
+
